@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Service Provider Details -->
+
+
+        <TextView
+            android:id="@+id/spNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Provider Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/spContactTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact: 1234567890"
+            android:layout_gravity="center" />
+
+        <!-- Service Details -->
+
+        <TextView
+            android:id="@+id/serviceNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/servicePriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: $100"
+            android:layout_gravity="center" />
+
+
+        <TextView
+            android:id="@+id/categoryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category: Home Services"
+            android:layout_gravity="center" />
+
+        <!-- Date Picker and Booking Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date:"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="16dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:startIconDrawable="@drawable/baseline_calendar_today_24"
+            android:hint="Date">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Date_Selector"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Time:"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="16dp"/>
+
+        <Spinner
+            android:id="@+id/timeSlotSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/bookButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>

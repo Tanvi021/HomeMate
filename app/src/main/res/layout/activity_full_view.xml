@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Categories.FullViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/fullviewimage"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/Rounded">
+        </com.google.android.material.imageview.ShapeableImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+        <TextView
+            android:id="@+id/fullviewservicename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service Name"
+            android:textSize="35sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_regular"/>
+        <TextView
+            android:id="@+id/fullviewpricename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$ 499"
+            android:textColor="@color/random"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_regular"/>
+        <TextView
+            android:id="@+id/fullviewdescname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_regular"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Included:"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_regular">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/check">
+                </ImageView>
+                <TextView
+                    android:id="@+id/included_in_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="include"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/roboto_regular"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Excluded:"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_regular">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cancel">
+                </ImageView>
+                <TextView
+                    android:id="@+id/excluded_in_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="exclude"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/roboto_regular"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/book_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Book"
+                android:background="@drawable/buttoncolor">
+            </androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
